@@ -1,5 +1,6 @@
 const businessInfo = [
   { label: '사업자등록번호', value: '611-31-00110' },
+  { label: '통신판매신고번호', value: '20충북청주2721' },
   { label: '대표', value: '고수태' },
   { label: '주소', value: '충북 청주시 청원구 대성로 254번길 21' },
 ];
@@ -7,7 +8,7 @@ const businessInfo = [
 const contactInfo = [
   { label: '대표전화', value: '1544-2604', href: 'tel:1544-2604' },
   { label: 'TEL', value: '(043) 260-2640', href: 'tel:043-260-2640' },
-  { label: 'FAX', value: '(043) 235-2640', href: 'tel:043-235-2640' },
+  { label: 'FAX', value: '(043) 235-2640' },
   { label: 'H.P', value: '010-7935-4949', href: 'tel:010-7935-4949' },
   {
     label: 'Email',
@@ -28,7 +29,6 @@ const Footer = () => {
                 사업자 정보
               </h3>
               <dl className='text-sm text-gray-300 space-y-2'>
-                {/* businessInfo 배열을 map으로 순회하여 동적으로 렌더링 */}
                 {businessInfo.map((item) => (
                   <div className='flex' key={item.label}>
                     <dt className='font-semibold w-28 shrink-0'>
@@ -45,24 +45,38 @@ const Footer = () => {
               <h3 className='text-lg font-semibold mb-4 border-b border-gray-700 pb-2'>
                 고객센터
               </h3>
-              <dl className='text-sm text-gray-300 space-y-2'>
-                {/* contactInfo 배열을 map으로 순회하여 동적으로 렌더링 */}
-                {contactInfo.map((item) => (
-                  <div className='flex items-center' key={item.label}>
-                    <dt className='font-semibold w-20 shrink-0'>
-                      {item.label}
-                    </dt>
-                    <dd>
-                      {item.href ? (
-                        <a href={item.href} className='hover:underline'>
-                          {item.value}
-                        </a>
-                      ) : (
-                        item.value
-                      )}
-                    </dd>
-                  </div>
-                ))}
+              <dl className='text-gray-300'>
+                <div className='flex items-center mb-4 gap-5'>
+                  <dt className='font-semibold w-20 shrink-0 text-xl'>
+                    대표전화
+                  </dt>
+                  <dd className='text-2xl font-bold text-white'>
+                    <a href='tel:1544-2604' className='hover:underline'>
+                      1544-2604
+                    </a>
+                  </dd>
+                </div>
+
+                <div className='space-y-2 text-sm'>
+                  {contactInfo
+                    .filter((item) => item.label !== '대표전화')
+                    .map((item) => (
+                      <div className='flex items-center' key={item.label}>
+                        <dt className='font-semibold w-20 shrink-0'>
+                          {item.label}
+                        </dt>
+                        <dd>
+                          {item.href ? (
+                            <a href={item.href} className='hover:underline'>
+                              {item.value}
+                            </a>
+                          ) : (
+                            item.value
+                          )}
+                        </dd>
+                      </div>
+                    ))}
+                </div>
               </dl>
             </div>
           </div>

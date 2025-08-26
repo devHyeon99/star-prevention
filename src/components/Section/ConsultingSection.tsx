@@ -12,9 +12,12 @@ import {
 // 컨설팅 섹션 컴포넌트
 const ConsultingSection = () => {
   const farmImages = [
-    { src: '/images/consulting-01.jpg', alt: '컨설팅 약품 이미지 1' },
-    { src: '/images/farm-care-02.jpg', alt: '농장관리 이미지 2' },
-    { src: '/images/farm-care-03.jpg', alt: '농장관리 이미지 3' },
+    { src: '/images/consulting-01.jpg', alt: '컨설팅 이미지 1' },
+    { src: '/images/gallery/gallery-04.jpg', alt: '컨설팅 이미지 2' },
+    { src: '/images/gallery/gallery-05.jpg', alt: '컨설팅 이미지 3' },
+    { src: '/images/gallery/gallery-06.jpg', alt: '컨설팅 이미지 4' },
+    { src: '/images/gallery/gallery-07.jpg', alt: '컨설팅 이미지 5' },
+    { src: '/images/gallery/gallery-08.jpg', alt: '컨설팅 이미지 6' },
   ];
 
   const plugin = React.useRef(
@@ -22,12 +25,12 @@ const ConsultingSection = () => {
   );
 
   return (
-    <section className='flex justify-center items-center pb-12'>
+    <section className='flex justify-center items-center py-12'>
       <div className='container'>
-        <h2 className='mb-3 text-center text-3xl font-bold leading-tight md:text-left lg:text-4xl'>
+        <h2 className='mb-3 text-center text-3xl font-bold leading-tight md:text-left lg:text-5xl'>
           컨설팅
         </h2>
-        <p className='mb-8 text-center text-lg text-muted-foreground md:text-left'>
+        <p className='mb-8 text-center text-lg text-muted-foreground md:text-left md:text-2xl'>
           자체 방역을 원하는 농가는 특화된 약품을 보내드립니다. 작업 방법 및
           모든 제반 사항을 제공하고 있습니다.
         </p>

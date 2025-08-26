@@ -1,67 +1,41 @@
 'use client';
 
 import React from 'react';
-import Autoplay from 'embla-carousel-autoplay';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from '@/components/ui/carousel';
-import Image from 'next/image';
 
 const IntroduceSection = () => {
-  const images = [
-    '/images/star-bg-01.jpg',
-    '/images/star-bg-02.jpg',
-    '/images/star-bg-03.jpg',
-  ];
-
-  const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
-  );
-
   return (
-    <section className='flex justify-center items-center py-12 md:py-24'>
-      <div className='container grid items-center gap-8 md:grid-cols-2 md:justify-center'>
-        {/* 소개글 (왼쪽) */}
-        <div className='flex flex-col items-center space-y-3 md:items-start'>
-          <h1 className='text-center text-3xl font-bold leading-tight md:text-left lg:text-5xl'>
+    <section
+      className='relative flex justify-center items-center min-h-screen bg-cover bg-center'
+      style={{ backgroundImage: `url('/images/bg.jpg')` }}
+    >
+      <div className='absolute inset-0 bg-black opacity-75'></div>
+
+      <div className='container relative grid items-center gap-8 md:grid-cols-2 z-10 text-white px-4 sm:px-6 lg:px-8'>
+        <div className='flex flex-col items-center space-y-4 md:items-start'>
+          <h1
+            className='text-center text-4xl font-bold leading-tight tracking-tighter md:text-left lg:text-5xl xl:text-6xl'
+            style={{ textShadow: '2px 2px 8px rgba(0, 0, 0, 0.7)' }}
+          >
             최고의 방역 솔루션,
             <br />
-            <span className='text-blue-600'>스타방역공사</span>가 함께합니다.
+            <span className='text-blue-400'>스타방역공사</span>가 함께합니다.
           </h1>
-          <p className='text-center text-lg text-muted-foreground md:text-left'>
+          <p
+            className='text-center text-lg text-gray-200 md:text-left md:text-2xl'
+            style={{ textShadow: '1px 1px 6px rgba(0, 0, 0, 0.8)' }}
+          >
             스타 방역공사는 양돈농장 전문 방역회사입니다.
-            <br className='md:hidden' />
+            <br />
             주로 농장관리 및 소독 서비스를 제공합니다.
+            <br />
+            <br />
+            <span className='font-bold text-3xl text-red-400'>
+              문의 전화 : 1544-2604
+            </span>
           </p>
         </div>
 
-        {/* 이미지 슬라이더 (오른쪽) */}
-        <div className='flex justify-center'>
-          <Carousel
-            className='w-full h-full max-w-sm md:max-w-none mx-auto'
-            plugins={[plugin.current]}
-            opts={{ loop: true }}
-          >
-            <CarouselContent>
-              {images.map((src, index) => (
-                <CarouselItem key={index}>
-                  <div className='relative aspect-square md:aspect-[4/3]'>
-                    <Image
-                      src={src}
-                      alt={`배경 슬라이드 ${index + 1}`}
-                      fill
-                      className='object-cover rounded-lg'
-                      sizes='(max-width: 768px) 100vw, 50vw'
-                      priority={index === 0}
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
-        </div>
+        <div className='hidden md:block'></div>
       </div>
     </section>
   );

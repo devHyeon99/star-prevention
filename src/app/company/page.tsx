@@ -10,9 +10,10 @@ const CompanyPage = () => {
         <div className='absolute inset-0 bg-black/50 z-10' />
         <Image
           src='/images/introduce-bg.jpg'
-          alt='깨끗하게 방역된 농장 전경'
+          alt='방역 배경 이미지'
           fill
           className='object-cover'
+          sizes='(max-width: 768px) 100vw, 50vw'
           priority
         />
         <div className='relative z-20 container px-4'>
@@ -35,18 +36,18 @@ const CompanyPage = () => {
             <h2 className='text-3xl md:text-4xl font-bold mb-4 text-center md:text-left'>
               깨끗한 내일을 약속합니다.
             </h2>
-            <p className='px-4 md:px-0 text-muted-foreground leading-relaxed text-center md:text-left'>
+            <p className='px-4 md:px-0 text-muted-foreground leading-relaxed text-center md:text-left md:text-xl'>
               안녕하십니까, 스타방역공사를 방문해 주셔서 감사합니다.
               <br />
               저희 스타방역공사는 양돈농장 전문방역회사로 주로 농장 관리 및 소독
               서비스를 제공하고 있습니다.
             </p>
-            <p className='px-4 md:px-0 mt-4 text-muted-foreground leading-relaxed text-center md:text-left'>
+            <p className='px-4 md:px-0 mt-4 text-muted-foreground leading-relaxed text-center md:text-left md:text-xl'>
               환경 친화적인 소독방역 시스템을 사용하여 농장 및 시설의 안전하고
               청결한 환경을 유지하는데 중점을 두고 있습니다. 수년간의 경험과
               믿음 그리고 신뢰로 약속 드립니다.
             </p>
-            <p className='mt-4 text-muted-foreground leading-relaxed text-center md:text-left'>
+            <p className='mt-4 text-muted-foreground leading-relaxed text-center md:text-left md:text-xl'>
               - 스타방역공사 직원일동 -
             </p>
           </div>
@@ -55,6 +56,7 @@ const CompanyPage = () => {
               src='/images/introduce-bg02.jpg'
               alt='악수하는 비즈니스 파트너'
               fill
+              sizes='(max-width: 768px) 100vw, 50vw'
               className='object-cover'
             />
           </div>
@@ -68,7 +70,7 @@ const CompanyPage = () => {
             <h2 className='text-3xl md:text-4xl font-bold'>
               스타방역공사의 경쟁력
             </h2>
-            <p className='px-3 mt-3 text-muted-foreground'>
+            <p className='px-3 mt-3 text-muted-foreground md:text-xl'>
               환경 친화적인 소독방역 시스템을 사용하여 농장및 시설의 안전하고
               청결한 환경을 유지하는데 중점을 두고 있습니다.
             </p>
@@ -78,7 +80,7 @@ const CompanyPage = () => {
             <div className='text-center mx-6 p-6 bg-background rounded-lg shadow-sm'>
               <ShieldCheck className='mx-auto size-12 text-blue-600 mb-4' />
               <h3 className='text-xl font-semibold mb-2'>전문 방역 시스템</h3>
-              <p className='text-muted-foreground text-sm'>
+              <p className='text-muted-foreground text-sm md:text-lg'>
                 스타방역공사는 양돈농장 방역에 특화되어 있으며 쥐 바퀴벌레
                 모든해충을 완벽한 박멸을 목표로 하고 있습니다.
               </p>
@@ -86,8 +88,8 @@ const CompanyPage = () => {
             {/* 강점 2 */}
             <div className='text-center mx-6 p-6 bg-background rounded-lg shadow-sm'>
               <Leaf className='mx-auto size-12 text-green-600 mb-4' />
-              <h3 className='text-xl font-semibold mb-2'>자체 방역 제공</h3>
-              <p className='text-muted-foreground text-sm'>
+              <h3 className='text-xl font-semibold mb-2'>컨설팅</h3>
+              <p className='text-muted-foreground text-sm md:text-lg'>
                 농장에서 자체방역을 원하는 농가는 저희회사가 특화된 약품을
                 보내드리고 있습니다.
               </p>
@@ -96,7 +98,7 @@ const CompanyPage = () => {
             <div className='text-center mx-6 p-6 bg-background rounded-lg shadow-sm'>
               <ClipboardCheck className='mx-auto size-12 text-gray-600 mb-4' />
               <h3 className='text-xl font-semibold mb-2'>철저한 사후 관리</h3>
-              <p className='text-muted-foreground text-sm'>
+              <p className='text-muted-foreground text-sm md:text-lg'>
                 일회성 방역에 그치지 않고 주기적으로 월 1~2회 농장관리를
                 해드립니다.
               </p>
@@ -134,11 +136,15 @@ const CompanyPage = () => {
               </p>
               <p className='text-lg mt-2'>
                 <strong className='w-20 inline-block'>대표전화</strong>
-                1544-2604
+                <a href='tel:1544-2604' className='hover:underline'>
+                  1544-2604
+                </a>
               </p>
               <p className='text-lg mt-2'>
                 <strong className='w-20 inline-block'>이메일</strong>
-                rhtnxo@naver.com
+                <a href='mailto:rhtnxo@naver.com' className='hover:underline'>
+                  rhtnxo@naver.com
+                </a>
               </p>
               <p className='text-lg mt-2'>
                 <strong className='w-20 inline-block'>상담시간</strong>평일

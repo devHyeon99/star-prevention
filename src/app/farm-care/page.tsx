@@ -16,7 +16,7 @@ const FarmCarePage = () => {
       <section className='relative h-[400px] w-full flex items-center justify-center text-center text-white'>
         <div className='absolute inset-0 bg-black/60 z-10' />
         <Image
-          src='/images/farm-care-bg.jpg' // TODO: 깨끗한 농장 관련 고화질 이미지로 교체하세요.
+          src='/images/farm-care-bg.jpg'
           alt='체계적으로 관리되는 현대식 농장'
           fill
           className='object-cover'
@@ -39,7 +39,7 @@ const FarmCarePage = () => {
             <h2 className='text-3xl md:text-4xl font-bold'>
               농장관리 방역 프로세스
             </h2>
-            <p className='mt-3 text-muted-foreground'>
+            <p className='mt-3 text-muted-foreground md:text-xl'>
               정확한 진단부터 철저한 사후관리까지
               <br /> 4단계 시스템으로 운영됩니다.
             </p>
@@ -50,8 +50,10 @@ const FarmCarePage = () => {
               <div className='flex items-center justify-center size-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-4'>
                 <Clipboard className='size-8' />
               </div>
-              <h3 className='text-xl font-semibold mb-2'>1. 현장 진단</h3>
-              <p className='mx-4 text-muted-foreground text-sm'>
+              <h3 className='text-xl md:text-2xl font-semibold mb-2'>
+                1. 현장 진단
+              </h3>
+              <p className='mx-4 text-muted-foreground text-sm md:text-xl'>
                 전문가가 직접 농장을 방문하여 해충 문제, 시설 구조 및 오염원을
                 정밀하게 진단합니다.
               </p>
@@ -61,8 +63,10 @@ const FarmCarePage = () => {
               <div className='flex items-center justify-center size-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-4'>
                 <FileText className='size-8' />
               </div>
-              <h3 className='text-xl font-semibold mb-2'>2. 맞춤 계획 수립</h3>
-              <p className='mx-4 text-muted-foreground text-sm'>
+              <h3 className='text-xl md:text-2xl font-semibold mb-2'>
+                2. 맞춤 계획 수립
+              </h3>
+              <p className='mx-4 text-muted-foreground text-sm md:text-xl'>
                 진단 결과를 바탕으로 농장 환경에 최적화된 방역 주기, 약품, 작업
                 방식을 설계합니다.
               </p>
@@ -72,8 +76,10 @@ const FarmCarePage = () => {
               <div className='flex items-center justify-center size-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-4'>
                 <SprayCan className='size-8' />
               </div>
-              <h3 className='text-xl font-semibold mb-2'>3. 전문 방역 실시</h3>
-              <p className='mx-4 text-muted-foreground text-sm'>
+              <h3 className='text-xl md:text-2xl font-semibold mb-2'>
+                3. 전문 방역 실시
+              </h3>
+              <p className='mx-4 text-muted-foreground text-sm md:text-xl'>
                 숙련된 방역팀이 계획에 따라 안전 수칙을 준수하며 꼼꼼하게 방역
                 작업을 진행합니다.
               </p>
@@ -83,9 +89,11 @@ const FarmCarePage = () => {
               <div className='flex items-center justify-center size-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-4'>
                 <Repeat className='size-8' />
               </div>
-              <h3 className='text-xl font-semibold mb-2'>4. 사후 관리</h3>
-              <p className='mx-4 text-muted-foreground text-sm'>
-                정기적인 모니터링을 통해 방역 효과를 점검하고 해충 재발을 원천
+              <h3 className='text-xl md:text-2xl font-semibold mb-2'>
+                4. 사후 관리
+              </h3>
+              <p className='mx-4 text-muted-foreground text-sm md:text-xl'>
+                정기적인 관리를 통해 방역 효과를 점검하고 해충 재발을 원천
                 차단합니다.
               </p>
             </div>
@@ -100,7 +108,7 @@ const FarmCarePage = () => {
             <h2 className='text-3xl md:text-4xl font-bold'>
               주요 관리 프로그램
             </h2>
-            <p className='mx-4 mt-3 text-muted-foreground'>
+            <p className='mx-4 mt-3 text-muted-foreground md:text-xl'>
               해충의 종류와 농장 환경에 따라 가장 효과적인 프로그램을
               제공합니다.
             </p>
@@ -108,14 +116,16 @@ const FarmCarePage = () => {
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mx-4'>
             <Card>
               <CardHeader>
-                <CardTitle>설치류(쥐) 방제 프로그램</CardTitle>
-                <CardDescription>
+                <CardTitle className='md:text-2xl'>
+                  설치류(쥐) 방제 프로그램
+                </CardTitle>
+                <CardDescription className='md:text-lg'>
                   농장 내외부 쥐의 서식지 및 침입 경로를 파악하고 맞춤형 방제
                   솔루션을 적용합니다.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className='list-disc list-inside text-muted-foreground space-y-2'>
+                <ul className='list-disc list-inside text-muted-foreground space-y-2 md:text-lg'>
                   <li>외부 방어 시스템 구축</li>
                   <li>내부 트랩 및 독먹이집 설치</li>
                   <li>정기적인 서식지 관리</li>
@@ -124,14 +134,16 @@ const FarmCarePage = () => {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>보행해충(바퀴) 방제 프로그램</CardTitle>
-                <CardDescription>
+                <CardTitle className='md:text-2xl'>
+                  보행해충(바퀴) 방제 프로그램
+                </CardTitle>
+                <CardDescription className='md:text-lg'>
                   바퀴벌레의 종류와 서식처를 분석하여 잔류분무, 독먹이 시공 등
                   복합적인 방법으로 박멸합니다.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className='list-disc list-inside text-muted-foreground space-y-2'>
+                <ul className='list-disc list-inside text-muted-foreground space-y-2 md:text-lg'>
                   <li>주요 서식처 집중 시공</li>
                   <li>성충 및 유충 동시 방제</li>
                   <li>지속적인 모니터링 트랩 설치</li>
@@ -140,14 +152,16 @@ const FarmCarePage = () => {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>종합 소독 및 악취 관리</CardTitle>
-                <CardDescription>
+                <CardTitle className='md:text-2xl'>
+                  종합 소독 및 악취 관리
+                </CardTitle>
+                <CardDescription className='md:text-lg'>
                   농장 내 유해 바이러스 및 세균을 소독하고, 악취의 원인을 찾아
                   쾌적한 환경을 조성합니다.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className='list-disc list-inside text-muted-foreground space-y-2'>
+                <ul className='list-disc list-inside text-muted-foreground space-y-2 md:text-lg'>
                   <li>주기적인 돈사 내외부 소독</li>
                   <li>차량 및 대인 소독 관리</li>
                   <li>악취 저감 솔루션 제공</li>

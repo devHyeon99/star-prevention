@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -19,15 +20,26 @@ const Header = () => {
     { href: '/reservation', label: '예약방법' },
   ];
 
-  const Logo = () => (
-    <Link href='/' className='p-4 font-bold text-2xl md:text-3xl'>
-      스타방역공사
-    </Link>
-  );
+  const Logo = () => {
+    return (
+      <Link href='/' className='p-4' aria-label='스타방역공사 홈페이지로 이동'>
+        <div className='relative w-[250px] h-[40px]'>
+          <Image
+            src='/logo.png'
+            alt='스타방역공사'
+            fill
+            className='object-contain'
+            sizes='(max-width: 768px) 100vw, 250px'
+            priority
+          />
+        </div>
+      </Link>
+    );
+  };
 
   const PcNav = () => (
     <nav aria-label='메인 메뉴' className='text-lg font-medium'>
-      <ul className='flex items-center space-x-6'>
+      <ul className='flex items-center'>
         {navLinks.map((link) => (
           <li key={link.href}>
             <Link

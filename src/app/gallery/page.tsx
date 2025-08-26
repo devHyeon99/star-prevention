@@ -1,19 +1,38 @@
 import Image from 'next/image';
 
 const galleryImages = [
-  { src: '/images/gallery/gallery-01.jpg', alt: '깨끗하게 소독된 농장 내부' },
-  { src: '/images/gallery/gallery-02.jpg', alt: '방역 장비를 착용한 전문가' },
-  { src: '/images/gallery/gallery-03.jpg', alt: '농장 외부에 설치된 쥐덫' },
-  { src: '/images/gallery/gallery-04.jpg', alt: '방역 약품을 준비하는 모습' },
-  { src: '/images/gallery/gallery-05.jpg', alt: '소독 작업을 진행하는 트럭' },
+  { src: '/images/gallery/gallery-01.jpg', alt: '방역 이미지 1' },
+  {
+    src: '/images/farmcare/farm-care-01.jpg',
+    alt: '방역 이미지 2',
+  },
+  { src: '/images/gallery/gallery-03.jpg', alt: '방역 이미지 3' },
+  { src: '/images/gallery/gallery-04.jpg', alt: '방역 이미지 4' },
+  { src: '/images/gallery/gallery-05.jpg', alt: '방역 이미지 5' },
   {
     src: '/images/gallery/gallery-06.jpg',
-    alt: '꼼꼼하게 약품을 도포하는 모습',
+    alt: '방역 이미지 6',
   },
-  { src: '/images/gallery/gallery-07.jpg', alt: '방역 작업 후 정리된 모습' },
+  { src: '/images/gallery/gallery-07.jpg', alt: '방역 이미지 7' },
   {
-    src: '/images/gallery/gallery-08.jpg',
-    alt: '농장주와 상담하는 방역 전문가',
+    src: '/images/farmcare/farm-care-02.jpg',
+    alt: '방역 이미지 8',
+  },
+  {
+    src: '/images/farmcare/farm-care-03.jpg',
+    alt: '방역 이미지 9',
+  },
+  {
+    src: '/images/farmcare/farm-care-04.jpg',
+    alt: '방역 이미지 10',
+  },
+  {
+    src: '/images/farmcare/farm-care-05.jpg',
+    alt: '방역 이미지 11',
+  },
+  {
+    src: '/images/farmcare/farm-care-06.jpg',
+    alt: '방역 이미지 11',
   },
 ];
 
