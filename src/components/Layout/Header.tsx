@@ -23,7 +23,7 @@ const Header = () => {
   const Logo = () => {
     return (
       <Link href='/' className='p-4' aria-label='스타방역공사 홈페이지로 이동'>
-        <div className='relative w-[250px] h-[40px]'>
+        <div className='relative w-[180px] h-[40px] md:w-[250px] md:h-[40px]'>
           <Image
             src='/logo.png'
             alt='스타방역공사'
