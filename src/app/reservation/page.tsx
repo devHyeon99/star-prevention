@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Phone, Clock, Mail } from 'lucide-react';
 import {
@@ -7,6 +8,38 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { Card, CardContent } from '@/components/ui/card';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://star-prevention.vercel.app'),
+  title: '예약방법',
+  description:
+    '스타 방역 공사의 예약방법 페이지입니다. 상담 전화를 통해 농장관리 솔루션을 제안받을 수 있습니다.',
+  keywords: [
+    '스타 방역 공사',
+    '예약방법',
+    '양돈농장 방역',
+    '농장 소독',
+    '청주 방역 업체',
+    '약품 제공',
+  ],
+  openGraph: {
+    title: '예약방법',
+    description:
+      '스타 방역공사는 다년간의 현장 경험과 전문 지식을 바탕으로 가장 효과적이고 신뢰할 수 있는 방역 솔루션을 제공합니다.',
+    url: 'https://star-prevention.vercel.app/reservation',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: '스타 방역 공사 대표 이미지',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://star-prevention.vercel.app/reservation',
+  },
+};
 
 // 예약방법 페이지
 const ReservationPage = () => {
@@ -50,7 +83,7 @@ const ReservationPage = () => {
                 상담 신청
               </h3>
               <p className='text-muted-foreground text-sm md:text-xl'>
-                온라인 또는 유선을 통해 문의를 접수합니다.
+                전화 상담을 통해 문의를 접수합니다.
               </p>
             </div>
             <div className='flex flex-col items-center'>
