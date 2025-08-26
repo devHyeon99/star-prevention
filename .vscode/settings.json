@@ -10,5 +10,6 @@
     "**/*.js.map": {
       "when": "$(basename)"
     }
-  }
+  },
+  "cSpell.words": ["embla", "picsum"]
 }
