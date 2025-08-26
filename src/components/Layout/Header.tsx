@@ -14,7 +14,7 @@ import {
 const Header = () => {
   const navLinks = [
     { href: '/company', label: '회사소개' },
-    { href: '/farm-care', label: '농장관리' },
+    { href: '/farmcare', label: '농장관리' },
     { href: '/consulting', label: '컨설팅' },
     { href: '/gallery', label: '방역사진' },
     { href: '/reservation', label: '예약방법' },
@@ -62,19 +62,19 @@ const Header = () => {
           <span className='sr-only'>메뉴 열기</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side='right'>
+      <SheetContent side='right' className='w-[300px] sm:w-[400px]'>
         <SheetTitle className='sr-only'>모바일 메뉴</SheetTitle>
         <SheetDescription className='sr-only'>
           사이트의 주요 페이지로 이동할 수 있는 메뉴입니다.
         </SheetDescription>
-        <nav aria-label='모바일 메뉴' className='text-lg font-medium mt-8'>
-          <ul className='grid gap-6 justify-center mt-8'>
-            {navLinks.map((link) => (
-              <li key={link.href} className='text-center'>
+        <nav aria-label='모바일 메뉴' className='mt-8'>
+          <ul className='flex flex-col space-y-4'>
+            {navLinks.map((link, index) => (
+              <li key={`${link.href}-${index}`} className='w-full'>
                 <SheetClose asChild>
                   <Link
                     href={link.href}
-                    className='text-muted-foreground hover:text-foreground'
+                    className='block w-full text-lg font-medium text-center py-3 px-4 text-muted-foreground hover:text-foreground border-b border-border last:border-b-0 transition-colors'
                   >
                     {link.label}
                   </Link>
