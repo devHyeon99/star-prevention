@@ -1,4 +1,37 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
+
+export const metadata: Metadata = {
+  metadataBase: new URL('https://xn--ob0b810abmds9bg9f8ou.kr'),
+  title: '방역사진',
+  description:
+    '스타 방역 공사의 방역사진 페이지입니다. 스타방역공사의 전문성과 꼼꼼함을 현장 사진으로 직접 확인하세요.',
+  keywords: [
+    '스타 방역 공사',
+    '방역사진',
+    '양돈농장 방역',
+    '농장 소독',
+    '청주 방역 업체',
+    '약품 제공',
+  ],
+  openGraph: {
+    title: '방역사진',
+    description:
+      '스타 방역공사는 다년간의 현장 경험과 전문 지식을 바탕으로 가장 효과적이고 신뢰할 수 있는 방역 솔루션을 제공합니다.',
+    url: 'https://xn--ob0b810abmds9bg9f8ou.kr/gallery',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: '스타 방역 공사 대표 이미지',
+      },
+    ],
+  },
+  alternates: {
+    canonical: 'https://xn--ob0b810abmds9bg9f8ou.kr/gallery',
+  },
+};
 
 const galleryImages = [
   { src: '/images/gallery/gallery-01.jpg', alt: '방역 이미지 1' },

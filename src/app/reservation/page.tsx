@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/accordion';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://star-prevention.vercel.app'),
+  metadataBase: new URL('https://xn--ob0b810abmds9bg9f8ou.kr'),
   title: '예약방법',
   description:
     '스타 방역 공사의 예약방법 페이지입니다. 상담 전화를 통해 농장관리 솔루션을 제안받을 수 있습니다.',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: '예약방법',
     description:
       '스타 방역공사는 다년간의 현장 경험과 전문 지식을 바탕으로 가장 효과적이고 신뢰할 수 있는 방역 솔루션을 제공합니다.',
-    url: 'https://star-prevention.vercel.app/reservation',
+    url: 'https://xn--ob0b810abmds9bg9f8ou.kr/reservation',
     images: [
       {
         url: '/og-image.jpg',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://star-prevention.vercel.app/reservation',
+    canonical: 'https://xn--ob0b810abmds9bg9f8ou.kr/reservation',
   },
 };
 

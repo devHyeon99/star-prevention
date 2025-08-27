@@ -10,7 +10,7 @@ import {
 } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://star-prevention.vercel.app'),
+  metadataBase: new URL('https://xn--ob0b810abmds9bg9f8ou.kr'),
   title: '농장관리',
   description:
     '스타 방역 공사의 농장관리 페이지입니다. 주기적으로 월 1~2회 직접 방문해서 농장 관리를 해드립니다.',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: '농장관리',
     description:
       '스타 방역공사는 다년간의 현장 경험과 전문 지식을 바탕으로 가장 효과적이고 신뢰할 수 있는 방역 솔루션을 제공합니다.',
-    url: 'https://star-prevention.vercel.app/farmcare',
+    url: 'https://xn--ob0b810abmds9bg9f8ou.kr/farmcare',
     images: [
       {
         url: '/og-image.jpg',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://star-prevention.vercel.app/farmcare',
+    canonical: 'https://xn--ob0b810abmds9bg9f8ou.kr/farmcare',
   },
 };
 
