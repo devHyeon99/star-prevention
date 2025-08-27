@@ -49,7 +49,7 @@ const ConsultingPage = () => {
         <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>
           컨설팅
         </h1>
-        <p className='mt-4 text-lg md:text-3xl mx-auto text-shadow-lg font-medium'>
+        <p className='mt-4 text-lg md:text-4xl mx-auto text-shadow-lg font-medium'>
           농장에서 자체방역을 원하는 농가는 저희 회사가 특화된 약품을 보내드리고
           있습니다.
         </p>

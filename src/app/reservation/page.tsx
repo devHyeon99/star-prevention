@@ -58,7 +58,7 @@ const ReservationPage = () => {
           <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>
             상담 안내
           </h1>
-          <p className='mt-4 text-lg md:text-3xl max-w-3xl mx-auto text-shadow-lg font-medium'>
+          <p className='mt-4 text-lg md:text-4xl mx-auto text-shadow-lg font-medium'>
             전문가의 도움이 필요하신가요?
             <br />
             상담 전화를 통해 농장관리 솔루션을 제안받을 수 있습니다.
