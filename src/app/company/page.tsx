@@ -181,8 +181,8 @@ const CompanyPage = () => {
               </p>
               <p className='text-lg mt-2'>
                 <strong className='w-20 inline-block'>이메일</strong>
-                <a href='mailto:rhtnxo@naver.com' className='hover:underline'>
-                  rhtnxo@naver.com
+                <a href='mailto:rhtnxo77@naver.com' className='hover:underline'>
+                  rhtnxo77@naver.com
                 </a>
               </p>
               <p className='text-lg mt-2'>

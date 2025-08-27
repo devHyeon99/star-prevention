@@ -132,8 +132,8 @@ const ReservationPage = () => {
           </div>
           <div className='flex items-center'>
             <Mail className='size-6 mr-4 text-blue-600' />
-            <a href='mailto:rhtnxo@naver.com' className='hover:underline'>
-              rhtnxo@naver.com
+            <a href='mailto:rhtnxo77@naver.com' className='hover:underline'>
+              rhtnxo77@naver.com
             </a>
           </div>
           <div className='flex items-center'>

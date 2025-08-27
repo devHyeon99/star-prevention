@@ -14,8 +14,8 @@ const contactInfo = [
   { label: 'H.P', value: '010-7935-4949', href: 'tel:010-7935-4949' },
   {
     label: 'Email',
-    value: 'rhtnxo@naver.com',
-    href: 'mailto:rhtnxo@naver.com',
+    value: 'rhtnxo77@naver.com',
+    href: 'mailto:rhtnxo77@naver.com',
   },
 ];
 
