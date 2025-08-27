@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ShieldCheck, Leaf, ClipboardCheck } from 'lucide-react';
+import { ShieldCheck, Leaf, ClipboardCheck, FileCheck } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -39,24 +39,21 @@ const CompanyPage = () => {
     <main>
       {/* --- 1. 메인 배너 섹션 --- */}
       <section className='relative h-[400px] w-full flex items-center justify-center text-center text-white'>
-        <div className='absolute inset-0 bg-black/50 z-10' />
+        <div className='absolute inset-0 bg-black/60 z-10' />
         <Image
-          src='/images/introduce-bg.jpg'
+          src='/images/farm-care-bg.jpg'
           alt='방역 배경 이미지'
           fill
           className='object-cover'
           sizes='(max-width: 768px) 100vw, 50vw'
           priority
         />
-        <div className='relative z-20 container px-4'>
+        <div className='relative z-20 container px-2'>
           <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>
-            고객의 위생과 안전을 <br className='md:hidden' />
-            최우선으로
+            스마트한 방역과 소독으로 <br className='md:hidden' /> 농장 경쟁력 UP
           </h1>
-          <p className='mt-4 text-lg md:text-xl max-w-3xl mx-auto'>
-            스타방역공사는 다년간의 현장 경험과 전문 지식을 바탕으로
-            <br />
-            가장 효과적이고 신뢰할 수 있는 방역 솔루션을 제공합니다.
+          <p className='mt-4 text-lg md:text-3xl max-w-3xl mx-auto text-shadow-lg font-medium'>
+            농장의 쥐, 바퀴벌레, 해충 저희가 해결합니다.
           </p>
         </div>
       </section>
@@ -66,7 +63,7 @@ const CompanyPage = () => {
         <div className='container grid md:grid-cols-2 gap-12 items-center'>
           <div className='order-2 md:order-1'>
             <h2 className='text-3xl md:text-4xl font-bold mb-4 text-center md:text-left'>
-              깨끗한 내일을 약속합니다.
+              방역 전문 솔루션으로 질병 예방
             </h2>
             <p className='px-4 md:px-0 text-muted-foreground leading-relaxed text-center md:text-left md:text-xl'>
               안녕하십니까, 스타방역공사를 방문해 주셔서 감사합니다.
@@ -107,7 +104,7 @@ const CompanyPage = () => {
               청결한 환경을 유지하는데 중점을 두고 있습니다.
             </p>
           </div>
-          <div className='grid md:grid-cols-3 gap-8'>
+          <div className='grid md:grid-cols-4 gap-8'>
             {/* 강점 1 */}
             <div className='text-center mx-6 p-6 bg-background rounded-lg shadow-sm'>
               <ShieldCheck className='mx-auto size-12 text-blue-600 mb-4' />
@@ -133,6 +130,13 @@ const CompanyPage = () => {
               <p className='text-muted-foreground text-sm md:text-lg'>
                 일회성 방역에 그치지 않고 주기적으로 월 1~2회 농장관리를
                 해드립니다.
+              </p>
+            </div>
+            <div className='text-center mx-6 p-6 bg-background rounded-lg shadow-sm'>
+              <FileCheck className='mx-auto size-12 text-amber-500 mb-4' />
+              <h3 className='text-xl font-semibold mb-2'>방역 소득 증명서</h3>
+              <p className='text-muted-foreground text-sm md:text-lg'>
+                방역 소득 증명서를 제공해드립니다.
               </p>
             </div>
           </div>
@@ -182,7 +186,7 @@ const CompanyPage = () => {
                 </a>
               </p>
               <p className='text-lg mt-2'>
-                <strong className='w-20 inline-block'>상담시간</strong>평일
+                <strong className='w-20 inline-block'>상담시간</strong>
                 09:00 - 18:00
               </p>
             </div>

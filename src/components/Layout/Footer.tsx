@@ -1,3 +1,5 @@
+import Image from 'next/image'; // Image 컴포넌트를 사용하기 위해 import 합니다.
+
 const businessInfo = [
   { label: '사업자등록번호', value: '611-31-00110' },
   { label: '통신판매신고번호', value: '20충북청주2721' },
@@ -22,7 +24,8 @@ const Footer = () => {
     <footer className='bg-black text-white py-8'>
       <div className='container mx-auto px-4'>
         <address className='not-italic'>
-          <div className='md:grid md:grid-cols-2 gap-8'>
+          {/* --- grid-cols-2를 grid-cols-3으로 변경 --- */}
+          <div className='md:grid md:grid-cols-3 gap-8'>
             {/* --- 왼쪽 정보 (사업자 정보) --- */}
             <div className='mb-8 md:mb-0'>
               <h3 className='text-lg font-semibold mb-4 border-b border-gray-700 pb-2'>
@@ -40,8 +43,8 @@ const Footer = () => {
               </dl>
             </div>
 
-            {/* --- 오른쪽 정보 (연락처) --- */}
-            <div>
+            {/* --- 가운데 정보 (연락처) --- */}
+            <div className='mb-8 md:mb-0'>
               <h3 className='text-lg font-semibold mb-4 border-b border-gray-700 pb-2'>
                 고객센터
               </h3>
@@ -78,6 +81,22 @@ const Footer = () => {
                     ))}
                 </div>
               </dl>
+            </div>
+
+            <div>
+              <h3 className='text-lg font-semibold mb-4 border-b border-gray-700 pb-2'>
+                멤버스존
+              </h3>
+              <div className='flex flex-col items-center w-30 md:w-30 md:items-start text-center md:text-left'>
+                <Image
+                  src='/og-image.jpg'
+                  alt='스타방역공사 멤버스존 이미지'
+                  width={200}
+                  height={150}
+                  className='rounded-xl shadow-lg w-full h-auto'
+                  priority
+                />
+              </div>
             </div>
           </div>
         </address>

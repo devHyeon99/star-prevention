@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import { Phone, Clock, Mail } from 'lucide-react';
+import { Phone, Clock, Mail, MoveDown } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { Card, CardContent } from '@/components/ui/card';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://star-prevention.vercel.app'),
@@ -59,7 +58,7 @@ const ReservationPage = () => {
           <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>
             상담 안내
           </h1>
-          <p className='mt-4 text-lg md:text-xl max-w-3xl mx-auto'>
+          <p className='mt-4 text-lg md:text-3xl max-w-3xl mx-auto text-shadow-lg font-medium'>
             전문가의 도움이 필요하신가요?
             <br />
             상담 전화를 통해 농장관리 솔루션을 제안받을 수 있습니다.
@@ -73,7 +72,8 @@ const ReservationPage = () => {
           <div className='text-center mb-12'>
             <h2 className='text-3xl md:text-4xl font-bold'>서비스 예약 절차</h2>
             <p className='mt-3 text-muted-foreground md:text-xl'>
-              문의 접수부터 사후 관리까지, 체계적인 프로세스로 진행됩니다.
+              문의 접수부터 사후 관리까지,
+              <br className='md:hidden' /> 체계적인 프로세스로 진행됩니다.
             </p>
           </div>
           <div className='grid md:grid-cols-4 gap-8 text-center'>
@@ -86,6 +86,7 @@ const ReservationPage = () => {
                 전화 상담을 통해 문의를 접수합니다.
               </p>
             </div>
+            <MoveDown className='md:hidden w-full text-center' />
             <div className='flex flex-col items-center'>
               <div className='text-4xl font-bold text-blue-600/30 mb-2'>02</div>
               <h3 className='text-xl md:text-2xl font-semibold mb-2'>
@@ -95,6 +96,7 @@ const ReservationPage = () => {
                 전문가가 방문하여 문제점을 정밀 분석합니다.
               </p>
             </div>
+            <MoveDown className='md:hidden w-full text-center' />
             <div className='flex flex-col items-center'>
               <div className='text-4xl font-bold text-blue-600/30 mb-2'>03</div>
               <h3 className='text-xl md:text-2xl font-semibold mb-2'>
@@ -104,6 +106,7 @@ const ReservationPage = () => {
                 진단 결과에 따른 최적의 솔루션과 견적을 제안합니다.
               </p>
             </div>
+            <MoveDown className='md:hidden w-full text-center' />
             <div className='flex flex-col items-center'>
               <div className='text-4xl font-bold text-blue-600/30 mb-2'>04</div>
               <h3 className='text-xl md:text-2xl font-semibold mb-2'>
@@ -118,35 +121,28 @@ const ReservationPage = () => {
       </section>
 
       {/* --- 3. 문의 폼 및 연락처 정보 섹션 --- */}
-      <section className='flex justify-center py-16 md:py-24 bg-muted/40 mx-4'>
-        <Card className='flex-1 md:max-w-150'>
-          <CardContent className='pt-6'>
-            <h3 className='text-2xl font-semibold mb-6'>유선 상담 안내</h3>
-            <div className='space-y-4 text-lg'>
-              <div className='flex items-center'>
-                <Phone className='size-6 mr-4 text-blue-600' />
-                <a href='tel:1544-2604' className='hover:underline'>
-                  1544-2604
-                </a>
-              </div>
-              <div className='flex items-center'>
-                <Mail className='size-6 mr-4 text-blue-600' />
-                <a href='mailto:rhtnxo@naver.com' className='hover:underline'>
-                  rhtnxo@naver.com
-                </a>
-              </div>
-              <div className='flex items-start'>
-                <Clock className='size-6 mr-4 mt-1 text-blue-600' />
-                <div>
-                  <p>평일: 09:00 - 18:00</p>
-                  <p className='text-sm text-muted-foreground'>
-                    (주말 및 공휴일 휴무)
-                  </p>
-                </div>
-              </div>
+      <section className='flex flex-col w-full items-center gap-12 py-16 md:py-24 bg-muted/40'>
+        <h3 className='text-3xl md:text-4xl font-semibold'>전화 상담 안내</h3>
+        <div className='space-y-4 text-lg'>
+          <div className='flex items-center'>
+            <Phone className='size-6 mr-4 text-blue-600' />
+            <a href='tel:1544-2604' className='hover:underline'>
+              1544-2604
+            </a>
+          </div>
+          <div className='flex items-center'>
+            <Mail className='size-6 mr-4 text-blue-600' />
+            <a href='mailto:rhtnxo@naver.com' className='hover:underline'>
+              rhtnxo@naver.com
+            </a>
+          </div>
+          <div className='flex items-center'>
+            <Clock className='size-6 mr-4 text-blue-600' />
+            <div>
+              <p>09:00 - 18:00</p>
             </div>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </section>
 
       {/* --- 4. 자주 묻는 질문(FAQ) 섹션 --- */}

@@ -59,8 +59,9 @@ const FarmCarePage = () => {
           <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>
             양돈농장 방역 관리
           </h1>
-          <p className='mt-4 text-lg md:text-xl max-w-3xl mx-auto'>
+          <p className='mt-4 text-lg md:text-3xl max-w-3xl mx-auto text-shadow-lg font-medium'>
             주기적으로 월 1~2회 직접 방문해서 농장 관리를 해드립니다.
+            <br />쥐 퇴치를 통해 사료 절감, 더 큰 수익으로 연결됩니다.
           </p>
         </div>
       </section>

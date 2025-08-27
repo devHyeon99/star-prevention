@@ -87,7 +87,7 @@ const GalleryPage = () => {
           <h1 className='text-4xl md:text-6xl font-extrabold tracking-tight'>
             방역 현장 갤러리
           </h1>
-          <p className='mt-4 text-lg md:text-xl max-w-3xl mx-auto'>
+          <p className='mt-4 text-lg md:text-3xl mx-auto text-shadow-lg font-medium'>
             스타방역공사의 전문성과 꼼꼼함을 현장 사진으로 직접 확인하세요.
           </p>
         </div>

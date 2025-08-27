@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const IntroduceSection = () => {
   return (
@@ -10,7 +11,18 @@ const IntroduceSection = () => {
     >
       <div className='absolute inset-0 bg-black opacity-75'></div>
 
-      <div className='container relative grid items-center gap-8 md:grid-cols-2 z-10 text-white px-4 sm:px-6 lg:px-8'>
+      <div className='flex flex-col md:flex-row items-center gap-10 container z-10 text-white px-4 sm:px-6 lg:px-8'>
+        <div className='w-40 md:w-50'>
+          <Image
+            src='/og-image.jpg'
+            alt='스타방역공사 멤버스존 이미지'
+            width={200}
+            height={150}
+            className='rounded-xl shadow-lg w-full h-auto'
+            priority
+          />
+        </div>
+
         <div className='flex flex-col items-center space-y-4 md:items-start'>
           <h1
             className='text-center text-3xl font-bold leading-tight tracking-tighter md:text-left lg:text-5xl xl:text-6xl'
@@ -34,8 +46,6 @@ const IntroduceSection = () => {
             </span>
           </p>
         </div>
-
-        <div className='hidden md:block'></div>
       </div>
     </section>
   );
