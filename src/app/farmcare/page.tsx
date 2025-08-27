@@ -49,7 +49,7 @@ const FarmCarePage = () => {
       <section className='relative h-[400px] w-full flex items-center justify-center text-center text-white'>
         <div className='absolute inset-0 bg-black/60 z-10' />
         <Image
-          src='/images/farm-care-bg.jpg'
+          src='/images/farmcarebg.jpg'
           alt='체계적으로 관리되는 현대식 농장'
           fill
           className='object-cover'

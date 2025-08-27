@@ -13,12 +13,12 @@ import {
 // 농장관리 섹션 컴포넌트
 const FarmCareSection = () => {
   const farmImages = [
-    { src: '/images/farmcare/farm-care-01.jpg', alt: '농장관리 이미지 1' },
-    { src: '/images/farmcare/farm-care-02.jpg', alt: '농장관리 이미지 2' },
-    { src: '/images/farmcare/farm-care-03.jpg', alt: '농장관리 이미지 3' },
-    { src: '/images/farmcare/farm-care-04.jpg', alt: '농장관리 이미지 4' },
-    { src: '/images/farmcare/farm-care-05.jpg', alt: '농장관리 이미지 5' },
-    { src: '/images/farmcare/farm-care-06.jpg', alt: '농장관리 이미지 6' },
+    { src: '/images/farmcare/farmcare01.jpg', alt: '농장관리 이미지 1' },
+    { src: '/images/farmcare/farmcare02.jpg', alt: '농장관리 이미지 2' },
+    { src: '/images/farmcare/farmcare03.jpg', alt: '농장관리 이미지 3' },
+    { src: '/images/farmcare/farmcare04.jpg', alt: '농장관리 이미지 4' },
+    { src: '/images/farmcare/farmcare05.jpg', alt: '농장관리 이미지 5' },
+    { src: '/images/farmcare/farmcare06.jpg', alt: '농장관리 이미지 6' },
   ];
 
   const plugin = React.useRef(
