@@ -25,7 +25,7 @@ const ConsultingSection = () => {
   );
 
   return (
-    <section className='flex justify-center items-center py-12'>
+    <section className='flex justify-center items-center pb-12'>
       <div className='container'>
         <h2 className='mb-3 text-center text-3xl font-bold leading-tight md:text-left lg:text-5xl'>
           컨설팅
@@ -37,7 +37,7 @@ const ConsultingSection = () => {
 
         {/* --- 모바일용: 캐러셀 슬라이더 --- */}
         <Carousel
-          className='md:hidden w-full max-w-sm mx-auto'
+          className='md:hidden flex-1'
           plugins={[plugin.current]}
           opts={{ loop: true }}
         >
@@ -49,7 +49,7 @@ const ConsultingSection = () => {
                     src={image.src}
                     alt={image.alt}
                     fill
-                    className='rounded-lg object-cover'
+                    className='md:rounded-lg object-cover'
                     sizes='(max-width: 768px) 100vw, 50vw'
                   />
                 </div>
